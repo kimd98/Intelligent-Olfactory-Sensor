@@ -6,6 +6,7 @@ There are various types of olfactory intelligence applications and the perfume a
 
 ## Technologies
 - Olfactory sensor using Arduino Uno and CCS811
+- Deep Learning with TensorFlow
 - Supervised Machine Learning algorithm: Support Vector Machine (SVM) Radial Basis Function (RBF) Kernel
 
 ## References
