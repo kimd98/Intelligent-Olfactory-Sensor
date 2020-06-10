@@ -12,3 +12,5 @@ There are various types of olfactory intelligence applications and the perfume a
 ## References
 - 10 Machine Learning Algorithms (https://www.dataquest.io/blog/top-10-machine-learning-algorithms-for-beginners/)
 - Supervied ML Classification (https://builtin.com/data-science/supervised-machine-learning-classification)
+- TensorFlow Customization (https://www.tensorflow.org/tutorials/customization/basics)
+- TensorFlow Customition Docs (https://github.com/tensorflow/docs/blob/master/site/en/tutorials/customization/basics.ipynb)
