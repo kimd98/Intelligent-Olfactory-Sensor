@@ -1,3 +1,4 @@
+import os
 import sys
 import time
 import board
@@ -21,15 +22,25 @@ def data():
         time.sleep(1)
 
 def stat(dataNum):
-    type = input("Choose number (0: fresh air, 1: citrus, 3: peppermint, 4: fish): ")
     global data_arr
     print("Samples being collected... Please wait")
     for x in range(dataNum):
+        raw = sgp.raw
+        raw = format(raw, '016b')
+        print(raw)
         for bit in range(16):
-            data_arr[x, bit] = decimalToBinary(sgp.raw)[bit]
-        time.sleep(0.5)
+            data_arr[x, bit] = int(raw[bit])
+        time.sleep(0.1)
 
+type = input("Choose type (freshair/citrus/peppermint/fish): ")
 stat(sample)
 saved = np.asarray(data_arr)
-print("Generating a data file...")
-np.savetxt('freshair.csv', saved, delimiter=',')
+filepath = 'data'
+
+i = 0
+while os.path.exists(filepath + '/' + type + "%s.csv" % i):
+    i = i + 1
+
+filename = type + str(i) + '.csv'
+np.savetxt(os.path.join(filepath, filename), saved, delimiter=',')
+print("Data file created !")
