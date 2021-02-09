@@ -5,7 +5,7 @@ This personal research has been motivated by Phylira, an AI solution to create n
 There are various types of olfactory intelligence applications and the perfume and fragrances market is one of them. This project uses a Machine Learning technique for a olfactory sensor to digitize and distinguish the sense of smell. Since anything that smells fragrant releases VOCs into the air, SGP30, an ultra-low power digital gas sensor solution that senses a wide range of Total Volatile Organic Compounds (TVOCs), will be used as a main component of the sensor. Various scent samples will be collected and used for deep learning with TensorFlow. If the sensor successfully detects the smell and tells the difference between different samples, then actual perfume products will be used to test the sensor. Also, data from the samples will be visualized and represented on the S-Catcher web app, the online encyclopedia of perfume and fragrances.
 
 ## Technologies
-- Olfactory sensor using Raspberry Pi Compute Module 3 and SGP30
+- Olfactory sensor using Raspberry Pi Compute Module 3, Gumstix Geppetto Dev board and Sensirion SGP40
 - Data analysis and visualization in Python using Matpotlib
 - Deep Learning with TensorFlow
 
