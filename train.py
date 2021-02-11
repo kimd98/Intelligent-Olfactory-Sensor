@@ -23,14 +23,14 @@ dataset2 = os.listdir(data_path2)
 dataset3 = os.listdir(data_path3)
 dataset4 = os.listdir(data_path4)
 
-# lists of data labels
+# lists of data labels (keep the sequence!)
 label1 = [data1] * len(dataset1)
 label2 = [data2] * len(dataset2)
 label3 = [data3] * len(dataset3)
 label4 = [data4] * len(dataset4)
 total_num = len(label1) + len(label2) + len(label3) + len(label4)
 
-# convert the label list to a rank-3 tensor (1 x 1 x data_num)
+# convert the label list to a rank-3 tensor (data_num x 1 x 1)
 train_label = label1 + label2 + label3 + label4
 train_label = np.array(train_label)
 train_label = np.reshape(train_label, (total_num, 1, 1))
@@ -55,7 +55,7 @@ for file in dataset4:
 data_3D = np.array(data_3D)
 train_feature = tf.convert_to_tensor(data_3D, tf.int16)
 
-# combine two tensors into one dataset object
+# combine two tensors (features & labels) into one dataset object
 train_dataset = tf.data.Dataset.from_tensor_slices((train_feature, train_label))
 print(train_feature.shape)
 print(train_label.shape)
