@@ -6,8 +6,8 @@ There are various types of olfactory intelligence applications and the perfume a
 
 ## Technologies
 - Raspberry Pi Compute Module 3, Gumstix Geppetto Dev board and Sensirion SGP40
-- Data collection for Deep Learning using NumPy
-- Classification with TensorFlow customized training
+- Data collection for Deep Learning using Pandas
+- Classification SKlearn techniques
 
 ## Fragrance Wheel and Scent Families
 Every perfume and after shave is based on the different scent families. A scent family has distinctive characteristics and often individuals will gravitate toward one scent family over another when choosing personal fragrances. Scent families are broken up into four main categories:
