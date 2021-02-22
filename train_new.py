@@ -28,7 +28,7 @@ for f in os.listdir(BCpath):
 BA = pd.concat(BAlist)
 BA['label'] = 1
 
-## citrusP (citrus fragent) vs citrusM (citrus sweet)
+## citrusP (citrus perfume) vs citrusM (citrus food)
 
 # citrus_perfume (2)
 citrusPlist = []
